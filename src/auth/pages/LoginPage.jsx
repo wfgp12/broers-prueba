@@ -1,20 +1,20 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input, Flex } from 'antd';
+import { Button, Form, Input, Flex } from 'antd';
 import Swal from 'sweetalert2';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useNavigate } from 'react-router-dom';
+
+import { login } from '../../store';
 
 
 export const LoginPage = () => {
-
   const [captchaValue, setCaptchaValue] = useState(null);
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const onFinish = (values) => {
     const { email, password } = values;
-
-    // Verifica el captcha antes de continuar
     if (!captchaValue) {
       Swal.fire({
         icon: "error",
@@ -24,7 +24,6 @@ export const LoginPage = () => {
       return;
     }
 
-    // Validación de credenciales
     if (email !== "admin@admin.com" && password !== "Admin") {
       Swal.fire({
         icon: "error",
@@ -34,7 +33,8 @@ export const LoginPage = () => {
 
       return
     } 
-    navigate("/");
+
+    dispatch(login({ email, password }));
   };
 
   return (
