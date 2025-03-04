@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    height: 100vh;
+    width: 100vw;   
+}
+
+.photo-container {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    display: grid;
+    align-items: center;
+    padding: 20%;
+    grid-template-columns: 100%;
+    background-color: #ffffff;
+}
+
+.header-form {
+    margin-bottom: 15px;
+}
+.header-form h1 {
+    margin-bottom: 0px;
+}
+.header-form small {
+    opacity: 0.5;
+}
