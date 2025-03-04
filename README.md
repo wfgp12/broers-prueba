@@ -1,12 +1,46 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Broers-prueba  
 
-Currently, two official plugins are available:
+Este proyecto es un frontend desarrollado con React y Vite como parte de una prueba técnica para el proceso de selección del puesto de Desarrollador Frontend en BROERS.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas  
+- React  
+- Vite  
+- JavaScript  
+- CSS  
 
-## Expanding the ESLint configuration
+## 📂 Instalación y ejecución  
+Para ejecutar el proyecto de forma local, sigue estos pasos:  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clona este repositorio:  
+   ```sh
+   git clone https://github.com/wfgp12/broers-prueba.git
+   ```
+2. Accede al directorio del proyecto:  
+   ```sh
+   cd broers-prueba
+   ```
+3. Instala las dependencias:  
+   ```sh
+   npm install
+   ```
+   o si usas Yarn:  
+   ```sh
+   yarn install
+   ```
+4. Inicia el servidor de desarrollo:  
+   ```sh
+   npm run dev
+   ```
+   o con Yarn:  
+   ```sh
+   yarn dev
+   ```
+
+## 📌 Notas  
+- Debido a un inconveniente, solo se contó con 1 hora efectiva de desarrollo de las 3 horas asignadas.  
+- Se entregará una versión desplegada próximamente para facilitar su visualización.  
+
+## 📧 Contacto  
+Si tienen alguna consulta, pueden contactarme en: w.gutierrez1206@gmail.com
+

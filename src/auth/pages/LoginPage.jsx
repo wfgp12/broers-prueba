@@ -93,12 +93,12 @@ export const LoginPage = () => {
             </Flex>
           </Form.Item>
           <Form.Item>
-            <Button block type="primary" htmlType="submit">
+            <Button disabled={!captchaValue} block type="primary" htmlType="submit">
               Iniciar Sesión
             </Button>
           </Form.Item>
           <Form.Item>
-            <Button block type="primary" htmlType="button">
+            <Button disabled block type="primary" htmlType="button">
               Registrarse
             </Button>
           </Form.Item>
